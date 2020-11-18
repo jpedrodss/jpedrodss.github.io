@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="smooth">
+    <header>
+      <h3>João</h3>
+      <ul>
+        <li><a href="#one">Início</a></li>
+        <li><a href="#two">Sobre</a></li>
+        <li><a href="#bottom">Contato</a></li>
+      </ul>
+    </header>
+    <section id="one">
+      <div class="content parallax">
+        <div>
+          <h1>João Pedro</h1>
+          <svg class="title">
+            <text x="0" y="40">João Pedro</text>
+            <path d="M 0 66 50 61"></path>
+          </svg>
+          <p class="lead">
+            Atualmente tenho 17 anos e estou cursando Desenvolvimento de sistemas<br>na escola SENAI de Informática, estou no segundo semestre.
+          </p>
+        </div>
+        <div class="blur">
+          <form>
+            <input type="text" placeholder="Email:" />
+            <input type="text" placeholder="Password:" /><a class="button" href="#bottom">Follow me</a>
+          </form>
+        </div>
+      </div>
+    </section>
+    <section id="two">
+      <h2>Projetos<span> feitos</span></h2>
+      <p>
+        Aqui apresentarei alguns prints de projetos já feitos em que houve a minha participação em um grupo, ou até mesmo feito sozinho.
+      </p>
+      <div class="blocks">
+        <div class="block">
+          <p>TEXT or ICON</p>
+        </div>
+        <div class="block">
+          <p>TEXT or ICON</p>
+        </div>
+        <div class="block">
+          <p>TEXT or ICON</p>
+        </div>
+        <div class="block">
+          <p>TEXT or ICON</p>
+        </div>
+      </div>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam perspiciatis vel, soluta earum at iure
+        error eos voluptates excepturi velit! Totam aliquam impedit architecto aperiam officia aliquid, aspernatur
+        magnam recusandae!</p>
+    </section>
+    <section id="three">
+      <div class="grid g_two">
+        <div>
+          <h2>Section<span> three</span></h2>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates, esse rerum numquam, quos incidunt,
+            sapiente tempore magnam modi libero maiores repellendus! Cupiditate dolore doloremque deserunt! Eaque
+            accusamus rem cumque nisi.</p>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates, esse rerum numquam, quos incidunt,
+            sapiente tempore magnam modi libero maiores repellendus! Cupiditate dolore doloremque deserunt! Eaque
+            accusamus rem cumque nisi.</p>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates, esse rerum numquam, quos incidunt,
+            sapiente tempore magnam modi libero maiores repellendus! Cupiditate dolore doloremque deserunt! Eaque
+            accusamus rem cumque nisi.</p>
+        </div>
+        <div class="flex column">
+          <div class="flex column">
+            <div class="flex jcsb">
+              <h4>Comunity</h4><span>77%</span>
+            </div>
+            <progress value="77" max="100"></progress>
+          </div>
+          <div class="flex column">
+            <div class="flex jcsb">
+              <h4>Team and Developers</h4><span>65%</span>
+            </div>
+            <progress value="65" max="100"></progress>
+          </div>
+          <div class="flex column">
+            <div class="flex jcsb">
+              <h4>Marketing</h4><span>88%</span>
+            </div>
+            <progress value="88" max="100"></progress>
+          </div>
+          <div class="flex column">
+            <div class="flex jcsb">
+              <h4>Design</h4><span>68%</span>
+            </div>
+            <progress value="68" max="100"></progress>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer id="bottom">
+      <div class="widgets">
+        <h3>João</h3>
+        <div class="widget">
+          <h5 class="follow">Follow me</h5>
+          <ul>
+            <li><a href="https://dribbble.com/andrejsharapov" target="blank">Dribbble</a></li>
+            <li><a href="https://codepen.io/andrejsharapov" target="blank">CodePen</a></li>
+            <li><a href="https://twitter.com/andrejsharapov" target="blank">Twitter</a></li>
+            <li><a href="https://www.behance.net/andrejsharapov" target="blank">Behance</a></li>
+          </ul>
+        </div>
+        <div class="widget">
+          <h5>Heading</h5>
+          <ul>
+            <li>Text</li>
+            <li>Text</li>
+            <li>Text</li>
+            <li>Text</li>
+          </ul>
+        </div>
+        <div class="widget">
+          <h5>Heading</h5>
+          <ul>
+            <li>Text</li>
+            <li>Text</li>
+            <li>Text</li>
+            <li>Text</li>
+          </ul>
+        </div>
+        <div class="widget">
+          <h5>CONTACTS</h5>
+          <ul>
+            <li>Text</li>
+            <li>Text</li>
+            <li>Text</li>
+            <li>Text</li>
+          </ul>
+        </div>
+      </div>
+      <div class="copy">
+        <p>
+          &copy; 2020 <span>&#9829;</span> <a href="https://github.com/jpedrodss" target="_blank">João
+            Pedro</a></p><a href="#one">Scroll top &#x2191;</a>
+      </div>
+    </footer>
+  </div>
+  <script>
+    // These features are not supported by all browsers. You can check the support on the site "Can I use"
+
+    function scroller() {
+      $(".smooth").on("scroll", function () {
+        let scrollPos = $(this).scrollTop();
+        $(".parallax").css({
+          top: scrollPos / 2 + "px",
+          opacity: 1 - scrollPos / 200
+        });
+      });
+    }
+    scroller();
+
+  </script>
+
+</body>
+
+</html>
