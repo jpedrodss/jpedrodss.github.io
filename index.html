@@ -1,135 +1,201 @@
 <!DOCTYPE html>
-<html lang="pt_BR">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
-</head>
-
-<body>
-
-  <div class="smooth">
-    <header>
-      <h3>João</h3>
-      <ul>
-        <li><a href="#one">Início</a></li>
-        <li><a href="#two">Projetos</a></li>
-        <li><a href="#three">Sobre</a></li>
-      </ul>
-    </header>
-    <section id="one">
-      <div class="content parallax">
-        <div>
-          <h1>João Pedro</h1>
-          <svg class="title">
-            <text x="0" y="40">João Pedro</text>
-            <path d="M 0 66 50 61"></path>
-          </svg>
-          <p class="lead">
-            Atualmente tenho 17 anos e estou cursando Desenvolvimento de sistemas na escola SENAI de Informática, estou
-            no segundo semestre.
-          </p>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Fazendo importação de estilos, fontes e bootstrap utilizado -->
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Fim de importações -->
+    <title>Portfólio - João Sampaio</title>
+  </head>
+  <header>
+    <!-- Header de navegação da aplicação -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+      <div class="container-fluid">
+        <a href="#" class="navbar-brand">João Pedro</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarTogglerDemo02"
+          aria-controls="navbarTogglerDemo02"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#start">Início</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#aboutMe">Conheça Mais</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projetos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contato</a>
+            </li>
+          </ul>
         </div>
-        <div class="blur">
-
+      </div>
+    </nav>
+    <!-- Fim do Header -->
+  </header>
+  <body>
+    <!-- Seção de apresentação pessoal -->
+    <section id="start">
+      <div class="container">
+        <div class="row g-4 presentation mt-5">
+          <div
+            class="h-10 col d-flex flex-column justify-content-center text-center"
+          >
+            <h1>João Pedro Sampaio</h1>
+            <h2>Desenvolvedor Full-Stack</h2>
+          </div>
+          <div class="h-100 col d-flex flex-column align-items-center">
+            <img
+              class="rounded-circle"
+              width="250"
+              height="250"
+              src="/assets/img/profile.png"
+              alt=""
+            />
+          </div>
         </div>
       </div>
     </section>
-    <section id="two">
-      <h2>Projetos<span> feitos</span></h2>
-      <p>
-        Aqui apresentarei alguns prints de um projeto, das páginas que eu desenvolvi.
-      </p>
-      <div class="blocks">
-        <div class="block" alt="teste">
-          <img class="img1">
-        </div>
-        <div class="block">
-          <img class="img2">
-        </div>
-        <div class="block">
-          <img class="img3">
+    <!-- Fim da seção -->
+    <!-- Seção sobre mim -->
+    <section id="aboutMe">
+      <div class="container">
+        <div class="row py-5">
+          <div class="mb-3 col-12">
+            <h2>Conheça mais sobre mim!</h2>
+          </div>
+          <div class="col-12">
+            <p>
+              Olá! Sou o João Pedro, tenho 19 anos, e atuo como Desenvolvedor
+              Full-Stack! Estou na posição há pouco mais de um ano, e desde
+              então venho me dedicando a aprender e aprimorar minhas habilidades
+              como desenvolvedor. Atualmente estou cursando Análise e
+              Desenvolvimento de Sistemas na UNINTER, e estou no 4º semestre.
+              Além disso, sou certificado como técnico de Desenvolvimendo de
+              Sistemas na escola SENAI Informática. E sou também certificado
+              como AWS Cloud Practioneer. <br /><br />
+              Tenho conhecimento em diversas partes quando se trata de
+              desenvolvimento, porém onde mais atuo é em estruturas serverless
+              back-end com node.js integradas com os serviços AWS. E no
+              front-end utilizo React em Javascript, e React em Typescript.
+              Porém de qualquer forma, amo trabalhar com desenvolvimento e estou
+              sempre disposto a aprender novas tecnologias e aprimorar minhas
+              habilidades.
+            </p>
+          </div>
         </div>
       </div>
-      <p>Este site foi feito em um projeto do SENAI, em que tínhamos que construir uma ideia e desenvolver um site
-         para apresentar a ideia.</p>
     </section>
-    <section id="three">
-      <div class="grid g_two">
-        <div>
-          <h2>Conhec<span>imentos</span></h2>
-          <p>Tenho conhecimento em linguagens de marcação e programação como HTML5, CSS3, JavaScript, C#, SQL e
-            TypeScript. Também possuo conhecimentos em utilização de bibliotecas e frameworks como Bootstrap, React,
-            React Bootstrap, Entity Framework Core e React Native, também no desenvolvimento de API's. E possuo conhecimento
-            em design, no Photoshop CC e Adobe XD.</p>
+    <!-- Fim da seção -->
+    <!-- Seção de Links de projetos e outros links pessoais -->
+    <section id="projects">
+      <div class="container">
+        <div class="row py-5">
+          <div class="my-auto col-6">
+            <h2>Conheça meus projetos!</h2>
+          </div>
+          <div class="list-group col-6">
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://appalm.net"
+              class="list-group-item list-group-item-action"
+              >Appalm
+            </a>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://heyfitacademia.com.br"
+              class="list-group-item list-group-item-action"
+              >Heyfit</a
+            >
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://github.com/jpedrodss/e-players"
+              class="list-group-item list-group-item-action"
+              >E-Players</a
+            >
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://github.com/jpedrodss"
+              class="list-group-item list-group-item-action"
+              >Meu GitHub</a
+            >
+
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://www.linkedin.com/in/jo%C3%A3o-pedro-87276a200/"
+              class="list-group-item list-group-item-action"
+              >Meu LinkedIn</a
+            >
+          </div>
         </div>
       </div>
     </section>
-    <footer id="bottom">
-      <div class="widgets">
-        <h3>João</h3>
-        <div class="widget">
-          <h5 class="follow">Siga-me</h5>
-          <ul>
-            <li><a href="https://github.com/jpedrodss" target="blank">Github</a></li>
-          </ul>
-        </div>
-        <div class="widget">
-          <h5>Contato</h5>
-          <ul>
-            <a href="https://github.com/jpedrodss" target="blank">jpedrodss@gmail.com</a>
-            <li>Text</li>
-            <li>Text</li>
-            <li>Text</li>
-          </ul>
-        </div>
-        <div class="widget">
-          <h5>Heading</h5>
-          <ul>
-            <li>Text</li>
-            <li>Text</li>
-            <li>Text</li>
-            <li>Text</li>
-          </ul>
-        </div>
-        <div class="widget">
-          <h5>CONTACTS</h5>
-          <ul>
-            <li>Text</li>
-            <li>Text</li>
-            <li>Text</li>
-            <li>Text</li>
-          </ul>
+    <!-- Fim da seção -->
+    <!-- Seção de contato -->
+    <section id="contact">
+      <div class="container">
+        <div class="row my-5">
+          <div class="my-auto text-center col-12">
+            <h2>Entre em contato comigo!</h2>
+          </div>
+          <form class="emailForm mx-auto my-5">
+            <div class="mb-3">
+              <label for="email" class="form-label">Seu e-mail</label>
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                aria-describedby="emailHelp"
+              />
+              <div id="emailHelp" class="form-text">
+                Fique tranquilo, seu e-mail não será compartilhado com ninguém!
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Sua mensagem</label>
+              <textarea
+                class="form-control"
+                id="message"
+                type="text"
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+          </form>
         </div>
       </div>
-      <div class="copy">
-        <p>
-          &copy; 2020 <span>&#9829;</span> <a href="https://github.com/jpedrodss" target="_blank">João
-            Pedro</a></p><a href="#one">Scroll top &#x2191;</a>
-      </div>
-    </footer>
-  </div>
-  <script>
-    // These features are not supported by all browsers. You can check the support on the site "Can I use"
-
-    function scroller() {
-      $(".smooth").on("scroll", function () {
-        let scrollPos = $(this).scrollTop();
-        $(".parallax").css({
-          top: scrollPos / 2 + "px",
-          opacity: 1 - scrollPos / 200
-        });
-      });
-    }
-    scroller();
-
-  </script>
-
-</body>
-
+    </section>
+    <!-- Fim da seção -->
+  </body>
 </html>
