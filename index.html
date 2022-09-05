@@ -21,6 +21,7 @@
       integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
       crossorigin="anonymous"
     ></script>
+    <script src="./js/form.js"></script>
     <!-- Fim de importações -->
     <title>Portfólio - João Sampaio</title>
   </head>
@@ -47,6 +48,9 @@
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#aboutMe">Conheça Mais</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#formation">Formação</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#projects">Projetos</a>
@@ -96,18 +100,33 @@
               Olá! Sou o João Pedro, tenho 19 anos, e atuo como Desenvolvedor
               Full-Stack! Estou na posição há pouco mais de um ano, e desde
               então venho me dedicando a aprender e aprimorar minhas habilidades
-              como desenvolvedor. Atualmente estou cursando Análise e
-              Desenvolvimento de Sistemas na UNINTER, e estou no 4º semestre.
-              Além disso, sou certificado como técnico de Desenvolvimendo de
-              Sistemas na escola SENAI Informática. E sou também certificado
-              como AWS Cloud Practioneer. <br /><br />
-              Tenho conhecimento em diversas partes quando se trata de
-              desenvolvimento, porém onde mais atuo é em estruturas serverless
-              back-end com node.js integradas com os serviços AWS. E no
-              front-end utilizo React em Javascript, e React em Typescript.
+              como desenvolvedor. Tenho conhecimento em diversas partes quando
+              se trata de desenvolvimento, porém onde mais atuo é em estruturas
+              serverless back-end com node.js integradas com os serviços AWS. E
+              no front-end utilizo React em Javascript, e React em Typescript.
               Porém de qualquer forma, amo trabalhar com desenvolvimento e estou
               sempre disposto a aprender novas tecnologias e aprimorar minhas
               habilidades.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Fim da seção -->
+    <!-- Seção sobre formação -->
+    <section id="formation">
+      <div class="container">
+        <div class="row py-5">
+          <div class="mb-3 col-12">
+            <h2>Formação</h2>
+          </div>
+          <div class="col-12">
+            <p>
+              Atualmente estou cursando Análise e Desenvolvimento de Sistemas na
+              UNINTER, e estou no 4º semestre. Além disso, sou certificado como
+              técnico de Desenvolvimendo de Sistemas na escola SENAI
+              Informática. E sou também certificado como AWS Cloud Practioneer.
+              <br /><br />
             </p>
           </div>
         </div>
@@ -170,14 +189,16 @@
           <div class="my-auto text-center col-12">
             <h2>Entre em contato comigo!</h2>
           </div>
-          <form class="emailForm mx-auto my-5">
+          <form onsubmit="submitEmail(), clear()" class="emailForm mx-auto my-5">
             <div class="mb-3">
               <label for="email" class="form-label">Seu e-mail</label>
               <input
                 type="email"
                 class="form-control"
                 id="email"
+                name="email"
                 aria-describedby="emailHelp"
+                required
               />
               <div id="emailHelp" class="form-text">
                 Fique tranquilo, seu e-mail não será compartilhado com ninguém!
@@ -188,6 +209,8 @@
               <textarea
                 class="form-control"
                 id="message"
+                name="message"
+                required
                 type="text"
               ></textarea>
             </div>
